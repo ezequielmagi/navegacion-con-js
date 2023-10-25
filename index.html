@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 1 JS</title>
+</head>
+<body>
+    <main id="paginaUno">
+        <header id="headerDeMain">
+            <p id="tituloDeHeaderDeMain">PAGINA UNO</p>
+            <nav>
+                <div onclick="volverApaginaUno()" id="irAPaginaUno">Pagina UNO</div>
+                <div id="irAPaginaDos">Pagina DOS</div>
+            </nav>
+            
+        </header>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sit reiciendis, impedit reprehenderit molestias sint, et fuga, illum voluptatibus laborum ea! Error labore iste accusantium, ad cumque distinctio quisquam ratione.</p>
+        </article>
+
+        <button onclick="verEmergente()" id="verEmergente" role="button">Ver Emergente</button>
+
+        <footer>
+            <p>Esto es un footer</p>
+        </footer>
+    </main>
+
+<!-- PAGINA DOS -->
+
+    <section id="paginaDos" class="hidden">
+        <header>
+            <p>PAGINA DOS</p>         
+            <nav>
+                <div onclick="volverApaginaUno()" id="irAPaginaUnoB">Pagina UNO</div>
+                <div id="irAPaginaDos">Pagina DOS</div>
+            </nav>
+        </header>
+        <article>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati blanditiis doloremque nulla. Nihil voluptatem, maiores sapiente in sint, commodi deleniti soluta, iusto et accusantium blanditiis amet dolorem mollitia non labore.</p>
+        </article>
+        <button onclick="verEmergente()" id="verEmergente" role="button">Ver Emergente</button>
+        <footer>
+            este es otro footer
+        </footer>
+    </section>
+
+<!-- EMERGENTE UNO -->
+
+    <article class="hidden" id="emergenteUno">
+        <header>
+            <p>Emergente</p>
+            <button role="button">X</button>
+        </header>
+        <article>
+            <p>Esto es un mensaje emergente</p>
+        </article>
+        <button onclick="cerrarEmergente()" role="button">Aceptar</button>
+        <footer>
+            este es otro footer
+        </footer>
+    </article>
+</body>
+<script src="main.js"></script>
+</html>
